@@ -25,6 +25,7 @@ public class onBattery : MonoBehaviour {
     }
     void OnTriggerEnter(Collider other) {
         if (other.tag == "Player") {
+            other.GetComponent<onMyPlayerForSomeControll>().myTargetEnergy += 20;
             Destroy(gameObject);
         }
     }
