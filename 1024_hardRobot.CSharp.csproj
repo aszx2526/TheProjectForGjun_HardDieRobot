@@ -87,6 +87,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\onBattery.cs" />
     <Compile Include="Assets\onFollowPlayer.cs" />
     <Compile Include="Assets\onMyGameManager.cs" />
     <Compile Include="Assets\onMyNextRoomCreater.cs" />
