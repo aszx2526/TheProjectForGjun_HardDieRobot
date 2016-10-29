@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/hardRobot.unity
+- path: Assets/Scenes/DieHardRobot.unity
   isLoaded: 1
   isActive: 1

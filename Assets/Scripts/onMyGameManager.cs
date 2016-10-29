@@ -27,11 +27,12 @@ public class onMyGameManager : MonoBehaviour {
     public void myUITextUpdate() {
         myRoomCount_text.text = "這是第"+myRoomCount.ToString()+"個房間";
         myScoreNow_text.text = myScoreNow.ToString()+"分了好棒棒";
-        if (myScoreNow < myScoreBest) {
-            myScoreBest_text.text = "還差" + myScoreBest.ToString() + "分一點";
+        if (myScoreNow < PlayerPrefs.GetInt("myBestScore")) {
+            myScoreBest_text.text = "嫩～比" + PlayerPrefs.GetInt("myBestScore").ToString() + "分低";
         }
         else {
             myScoreBest = myScoreNow;
+            PlayerPrefs.SetInt("myBestScore", myScoreBest);
             myScoreBest_text.text = "太神拉！！" + myScoreBest.ToString() + "是新紀錄！";
         }
         
