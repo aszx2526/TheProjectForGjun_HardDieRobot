@@ -16,6 +16,7 @@ public class onMyPlayerForSomeControll : MonoBehaviour {
     public float myEnergyUpdateSpeed;
     // Use this for initialization
     void Start () {
+        print("hehehaha");
         myEnergy = myFullEnergy;
         myTargetEnergy = myFullEnergy;
     }

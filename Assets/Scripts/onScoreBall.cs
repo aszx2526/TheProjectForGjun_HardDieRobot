@@ -16,7 +16,7 @@ public class onScoreBall : MonoBehaviour {
 	void Update () {
         if (isNeedToDie) {
             myDieTimer += Time.deltaTime;
-            if (myDieTimer >= 0.388) {
+            if (myDieTimer >= 0.15) {
                 Destroy(gameObject);
             }
         }
